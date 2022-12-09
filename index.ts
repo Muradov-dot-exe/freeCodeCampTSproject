@@ -17,6 +17,7 @@ type User = {
   name: string;
   email: string;
   isActive: boolean;
+  credcardDetaild?: number;
 };
 
 let myUser: User = {
@@ -25,3 +26,19 @@ let myUser: User = {
   email: "asda",
   isActive: false,
 };
+
+myUser.email = "hasfa ";
+
+type cardNumber = {
+  cardnumber: string;
+};
+
+type cardDate = {
+  cardDate: string;
+};
+
+//Type combining and combining another object to already combined types
+type cardDetails = cardNumber &
+  cardDate & {
+    cvv: number;
+  };

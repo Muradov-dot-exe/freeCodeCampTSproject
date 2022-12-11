@@ -1,7 +1,6 @@
 {
   "name": "freecodecamptsproject",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -16,5 +15,7 @@
   "bugs": {
     "url": "https://github.com/Muradov-dot-exe/freeCodeCampTSproject/issues"
   },
-  "homepage": "https://github.com/Muradov-dot-exe/freeCodeCampTSproject#readme"
+  "homepage": "https://github.com/Muradov-dot-exe/freeCodeCampTSproject#readme",
+  "keywords": [],
+  "description": ""
 }

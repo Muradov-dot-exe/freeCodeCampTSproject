@@ -4,14 +4,28 @@ interface Users {
   userId: number;
   googleId?: string;
   startTrial(): string;
+  getCoupon(couponname: string, value: number): number;
 }
 
-const hitesh: Users = {
+interface Users {
+  githubToken: string;
+}
+
+interface Admin extends Users {
+  role: "admin" | "ta" | "learner";
+}
+
+const hitesh: Admin = {
   dbId: 12,
   email: "hsdas",
   userId: 1,
+  githubToken: "git",
+  role:"admin"
   startTrial: () => {
     return "trial";
+  },
+  getCoupon: (name: "bruhname", value: 10) => {
+    return 10;
   },
 };
 

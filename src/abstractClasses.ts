@@ -13,6 +13,6 @@ class Instagrams extends TakePhoto {
     super(cameraMode, filter);
   }
   getSepia(): void {
-    console.log("Seipiq");
+    console.log("Seipia");
   }
 }

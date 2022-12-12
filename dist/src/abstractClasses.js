@@ -12,4 +12,7 @@ class Instagrams extends TakePhoto {
         this.filter = filter;
         this.burst = burst;
     }
+    getSepia() {
+        console.log("Seipiq");
+    }
 }

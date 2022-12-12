@@ -1,5 +1,7 @@
 abstract class TakePhoto {
   constructor(public cameraMode: string, public filter: string) {}
+
+  abstract getSepia(): void;
 }
 
 class Instagrams extends TakePhoto {
@@ -9,5 +11,8 @@ class Instagrams extends TakePhoto {
     public burst: number
   ) {
     super(cameraMode, filter);
+  }
+  getSepia(): void {
+    console.log("Seipiq");
   }
 }

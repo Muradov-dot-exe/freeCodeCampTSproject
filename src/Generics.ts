@@ -15,7 +15,13 @@ function getSearchProducts<T>(products: T[]): T {
   return products[myIndex];
 }
 
-function genericClass<T, U extends number>(valOne: T, valTwo: U): object {
+interface DataBase {
+  connection: string;
+  username: string;
+  password: string;
+}
+
+function genericClass<T, U extends DataBase>(valOne: T, valTwo: U): object {
   return {
     valOne,
     valTwo,
@@ -23,3 +29,36 @@ function genericClass<T, U extends number>(valOne: T, valTwo: U): object {
 }
 
 genericClass(3, "4");
+
+function genericClassOneGeneric<T, DataBase>(
+  valOne: T,
+  valTwo: DataBase
+): object {
+  return {
+    valOne,
+    valTwo,
+  };
+}
+
+genericClass(3, { connection: "sada", username: "sad", password: "12313" });
+
+//Generic Class
+
+interface Quiz {
+  name: string;
+  type: string;
+}
+
+interface Course {
+  name: string;
+  author: string;
+  subject: string;
+}
+
+class Sellable<T> {
+  public cart: T[] = [];
+
+  addToCart(products: T) {
+    this.cart.push(products);
+  }
+}

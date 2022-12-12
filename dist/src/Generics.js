@@ -18,3 +18,18 @@ function genericClass(valOne, valTwo) {
     };
 }
 genericClass(3, "4");
+function genericClassOneGeneric(valOne, valTwo) {
+    return {
+        valOne,
+        valTwo,
+    };
+}
+genericClass(3, { connection: "sada", username: "sad", password: "12313" });
+class Sellable {
+    constructor() {
+        this.cart = [];
+    }
+    addToCart(products) {
+        this.cart.push(products);
+    }
+}

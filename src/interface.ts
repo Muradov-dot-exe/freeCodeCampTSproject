@@ -1,10 +1,10 @@
-interface TakePhoto {
+interface TakePhotos {
   cameraMode: string;
   filter: string;
   burst: number;
 }
 
-class Instagram implements TakePhoto {
+class Instagram implements TakePhotos {
   constructor(
     public cameraMode: string,
     public filter: string,

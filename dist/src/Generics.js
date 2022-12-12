@@ -11,13 +11,15 @@ function getSearchProducts(products) {
     const myIndex = 3;
     return products[myIndex];
 }
+//TODO: GENERIC CLASS THAT ONE OF THE GENERICS EXTENDS DATABASE INTERFACE
 function genericClass(valOne, valTwo) {
     return {
         valOne,
         valTwo,
     };
 }
-genericClass(3, "4");
+//genericClass(3, "4");
+//TODO: GENERIC CLASS THAT TAKES DATABASE FUNCTION AS SECOND GENERIC
 function genericClassOneGeneric(valOne, valTwo) {
     return {
         valOne,

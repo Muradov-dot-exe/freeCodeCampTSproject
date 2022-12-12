@@ -21,6 +21,8 @@ interface DataBase {
   password: string;
 }
 
+//TODO: GENERIC CLASS THAT ONE OF THE GENERICS EXTENDS DATABASE INTERFACE
+
 function genericClass<T, U extends DataBase>(valOne: T, valTwo: U): object {
   return {
     valOne,
@@ -28,7 +30,9 @@ function genericClass<T, U extends DataBase>(valOne: T, valTwo: U): object {
   };
 }
 
-genericClass(3, "4");
+//genericClass(3, "4");
+
+//TODO: GENERIC CLASS THAT TAKES DATABASE FUNCTION AS SECOND GENERIC
 
 function genericClassOneGeneric<T, DataBase>(
   valOne: T,
@@ -42,7 +46,7 @@ function genericClassOneGeneric<T, DataBase>(
 
 genericClass(3, { connection: "sada", username: "sad", password: "12313" });
 
-//Generic Class
+//TODO: GENERIC CLASS
 
 interface Quiz {
   name: string;
